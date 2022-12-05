@@ -1,6 +1,7 @@
 import "./App.css";
 import Nav from "../Navbar/Nav";
 import { Route, Routes } from "react-router-dom";
+
 // import pages
 import Home from "../Home/Home";
 import CharacterList from "../Characterslist/CharacterList";
@@ -11,7 +12,7 @@ import EnemyList from "../EnermyList/EnemyList";
 function App() {
 
   return (
-    <>
+    <>      
       <Nav />
 
       <Routes>
@@ -21,7 +22,6 @@ function App() {
         <Route path="/ArtifactList" element={<ArtifactList />} />
         <Route path="/EnemyList" element={<EnemyList />} />
       </Routes>
-      {/* <CharacterList /> */}
     </>
   );
 }

@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.BG-color {
+    background: #22242d;
+}
+
+.flexCharacter {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+h1 {
+    color: #e4c179;
+    margin: 15px;
+    
+    text-align: center;
+}
+
+.border-line {
+    border: 5px solid #e4c179;
+    border-radius: 20px;
+}
+
+.characterBox:hover {
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    cursor: pointer;
+}

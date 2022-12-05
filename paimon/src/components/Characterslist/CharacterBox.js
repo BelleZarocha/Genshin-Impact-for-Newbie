@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
+import "../Characterslist/CharacterBox.css"
 
-function Home() {
+function CharacterBox() {
   const [characters, setCharacter] = useState([]);
     // fetch api
     async function getCharacters() {
@@ -13,13 +14,12 @@ function Home() {
     useEffect (()=> {
       getCharacters();
     },[])
-    console.log(characters);
   
   return (
     <div>
-      
+
     </div>
   )
 }
 
-export default Home
+export default CharacterBox
