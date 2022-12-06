@@ -1,0 +1,35 @@
+.visionIconBG {
+    height: 35px;
+    width: 35px;
+    background-color: #000;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20%;
+}
+
+.visionIcon {
+    height: 30px;
+}
+
+.visionFilter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.visionFilterBG {
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.visionFilterBG:hover {
+    background-color: #343a40;
+}

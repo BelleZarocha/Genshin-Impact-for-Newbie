@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
-import { Container } from "../StylesPages/PageLayout";
 import "../StylesPages/ShowList.css"
-import { StyledBox, StyledImg, StyledName } from "../StylesPages/ShowListStyled"
-import { render } from "@testing-library/react";
+import { Container, BgColor, BorderLine, StyledBox, StyledImg, StyledName } from "../StylesPages/PageLayout"
+import {  useNavigate } from 'react-router-dom';
 
 function EnemyList() {
       const [enemies, setEnemy] = useState([]);
       const [detail, setDetail] = useState([]);
-      // const [isLoading, setIsLoading] = useState(false);
+      const navigate = useNavigate();
       // fetch api
       async function getEnemies() {
-        // setIsLoading(true);
         const res = await fetch("https://api.genshin.dev/enemies");
         res
         .json()
@@ -45,28 +43,28 @@ function EnemyList() {
       
     return (
     <>
-    <div className="BG-color">
+    <BgColor>
       <Container>
-        <div className="border-line">
+        <BorderLine>
           <h1>Genshin Enemies</h1>
-          <div className="flexCharacter">
+          <div className="flexBox">
             {/* map character list from api and set them to capitalize the first letter */}
             {console.log("Detail1: ", detail)};
             {detail.map(enemy => 
              
-              <StyledBox>
+              <StyledBox onClick={()=>navigate(`/EnemyList/${enemy.id}`)}>
                 <StyledImg style={{height:"270px"}}src={"https://api.genshin.dev/enemies/" + enemy.id + "/icon"}/>
                 <StyledName>{enemy.name}</StyledName>
-                <StyledName>{enemy.title || "-"}</StyledName>
+                {/* <StyledName>{enemy.title || "-"}</StyledName> */}
 
               </StyledBox>
             )}
 
             {/* {enemies.map((enemy) => <p>{enemy.rarity}</p>)} */}
           </div>
-        </div>    
+        </BorderLine>    
       </Container>
-    </div>
+    </BgColor>
     </>
   );
 }
