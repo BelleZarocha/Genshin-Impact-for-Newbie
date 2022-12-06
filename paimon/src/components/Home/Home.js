@@ -10,7 +10,7 @@ function Home() {
       <Container>
       <BorderLine style={{background:"#e4c179", height: "6vmax"}}>
           <div>
-            <a style={{textDecoration:"none"}} href="https://genshin.hoyoverse.com/pc-launcher/?utm_source=SEA_google_SEAT2_performancemax_20220626&mhy_trace_channel=ga_channel&new=1&gclid=Cj0KCQiAyracBhDoARIsACGFcS6k402mEnaxf1658gjV7uUnT9HNu8-VWRlmW3lCGOSoOvWJ5sspY48aAtjHEALw_wcB#/GI008"><h1 style={{color:"#000"}}>Start to play Genshin Impact</h1></a>
+            <a style={{textDecoration:"none"}} href="https://genshin.hoyoverse.com/pc-launcher/?utm_source=SEA_google_SEAT2_performancemax_20220626&mhy_trace_channel=ga_channel&new=1&gclid=Cj0KCQiAyracBhDoARIsACGFcS6k402mEnaxf1658gjV7uUnT9HNu8-VWRlmW3lCGOSoOvWJ5sspY48aAtjHEALw_wcB#/GI008"><h1 style={{color:"#000", fontSize: "3vmax", textAlign: "center", alignContent:"center"}}>Start to play Genshin Impact</h1></a>
           </div>
         </BorderLine>
         <br/>
